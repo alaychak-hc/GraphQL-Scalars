@@ -30,9 +30,6 @@
   "bugs": {
     "url": "https://github.com/alaychak-hc/GraphQL-Scalars/issues"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "lint-staged": {
