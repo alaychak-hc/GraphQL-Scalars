@@ -5,7 +5,7 @@
     Email: ALaychak@harriscomputer.com
 
     Created At: 05-11-2022 11:57:10 PM
-    Last Modified: 05-12-2022 01:30:12 AM
+    Last Modified: 05-12-2022 02:03:02 AM
     Last Updated By: Andrew Laychak
 
     Description: Scalar for the upload file from an Ant Design File Upload component
@@ -17,7 +17,6 @@
 // #endregion
 
 // #region Imports
-import Upload from 'antd/lib/upload/Upload';
 import { GraphQLError, GraphQLScalarType } from 'graphql';
 // #endregion
 
@@ -26,8 +25,8 @@ const AntDesignFileUploadScalar = new GraphQLScalarType({
   name: 'AntDesignFileUploadScalar',
   description:
     'The upload scalar that represents a file from an Ant Design File Upload component',
-  parseValue(value: object) {
-    if ('originFileObj' in value) return value;
+  parseValue(value: { promise: unknown }) {
+    if ('originFileObj' in value) return value.promise;
     throw new GraphQLError('Ant Design - upload value invalid.');
   },
   parseLiteral(ast) {
