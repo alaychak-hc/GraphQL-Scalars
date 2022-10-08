@@ -1,6 +1,6 @@
 {
   "name": "@alaychak-hc/graphql-scalars",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "GraphQL scalars for Apollo Server v3",
   "scripts": {
     "prepublish": "pnpm build",
