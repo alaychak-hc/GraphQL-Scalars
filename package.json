@@ -1,6 +1,7 @@
 {
   "name": "graphql-scalars",
   "description": "The workspace for the GraphQL-Scalars project",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "publish:scalars": "pnpm --filter @alaychak-hc/graphql-scalars publish",
