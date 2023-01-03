@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "publish:scalars": "pnpm --filter @alaychak-hc/graphql-scalars publish",
+    "publish:scalars:local": "pnpm --filter @alaychak-hc/graphql-scalars publish --dry-run --force --no-git-checks",
+    "publish:scalars": "pnpm --filter @alaychak-hc/graphql-scalars publish --force --no-git-checks",
     "build:scalars": "pnpm --filter @alaychak-hc/graphql-scalars --filter=!./packages/scalars/dist build",
     "lint:staged": "pnpm --filter=!./packages/scalars/dist lint:staged -r",
     "contributors:add": "all-contributors add",
